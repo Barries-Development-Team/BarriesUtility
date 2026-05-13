@@ -1,15 +1,16 @@
-namespace BarriesUtility
+namespace BarriesUtility;
+
+using BarriesUtility.Forms;
+
+internal static class Program
 {
-    internal static class Program
+    ///  The main entry point for the application.
+    [STAThread]
+    static void Main()
     {
-        ///  The main entry point for the application.
-        [STAThread]
-        static void Main()
-        {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
-        }
+        // To customize application configuration such as set high DPI settings or default font,
+        // see https://aka.ms/applicationconfiguration.
+        ApplicationConfiguration.Initialize();
+        Application.Run(new MainForm());
     }
 }

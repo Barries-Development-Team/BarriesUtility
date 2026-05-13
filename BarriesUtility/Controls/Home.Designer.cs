@@ -1,4 +1,4 @@
-﻿namespace BarriesUtility
+﻿namespace BarriesUtility.Controls
 {
     partial class Home
     {
@@ -28,23 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            TestLabel = new Label();
+            TestButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // TestLabel
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(80, 87);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            TestLabel.AutoSize = true;
+            TestLabel.Location = new Point(80, 87);
+            TestLabel.Name = "TestLabel";
+            TestLabel.Size = new Size(71, 20);
+            TestLabel.TabIndex = 0;
+            TestLabel.Text = "TestLabel";
+            // 
+            // TestButton
+            // 
+            TestButton.Location = new Point(157, 83);
+            TestButton.Name = "TestButton";
+            TestButton.Size = new Size(94, 29);
+            TestButton.TabIndex = 1;
+            TestButton.Text = "button1";
+            TestButton.UseVisualStyleBackColor = true;
+            TestButton.Click += TestButton_Click;
             // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label1);
+            Controls.Add(TestButton);
+            Controls.Add(TestLabel);
             Name = "Home";
             Size = new Size(818, 497);
             ResumeLayout(false);
@@ -53,6 +65,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label TestLabel;
+        private Button TestButton;
     }
 }

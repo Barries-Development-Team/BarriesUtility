@@ -6,13 +6,17 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BarriesUtility
+namespace BarriesUtility.Controls;
+
+public partial class Home : UserControl
 {
-    public partial class Home : UserControl
+    public Home()
     {
-        public Home()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
+
+    private void TestButton_Click(object sender, EventArgs e)
+    {
+        MessageBox.Show("Hello World!");
     }
 }
